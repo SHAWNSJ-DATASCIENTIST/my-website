@@ -3,18 +3,153 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shawn's Website</title>
+  <title>Shawn | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="card">
-    <h1>Hello, I'm Shawn</h1>
-    <p>I build simple web projects using HTML, CSS, and JavaScript.</p>
 
-    <button id="themeButton">Change Theme</button>
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="assets/hero-video.mp4" type="video/mp4">
+    </video>
 
-    <p id="message"></p>
-  </main>
+    <div class="overlay"></div>
+
+    <nav>
+      <a class="logo" href="#">SHAWN.</a>
+
+      <button id="menuButton" class="menu-button" aria-label="Open navigation menu">
+        ☰
+      </button>
+
+      <div id="navLinks" class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="tag">COMPUTER SCIENCE STUDENT · ASPIRING DEVELOPER</p>
+
+      <h1>Building useful<br>digital solutions.</h1>
+
+      <p class="intro">
+        I am Shawn Samjapasinh Joyln, focused on web development,
+        Python, data visualization, and practical software projects.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="primary-button" href="#projects">View My Projects</a>
+
+        <a class="secondary-button" href="assets/resume.pdf" target="_blank">
+          View Resume
+        </a>
+      </div>
+    </div>
+
+    <p class="scroll-text">SCROLL TO EXPLORE ↓</p>
+  </section>
+
+  <section id="about" class="about">
+    <p class="tag dark-tag">ABOUT ME</p>
+
+    <h2>Turning ideas and data into working applications.</h2>
+
+    <p>
+      I am a student developer interested in creating clean web interfaces,
+      analyzing data, and developing practical applications. I enjoy learning
+      new technologies and solving real problems through programming.
+    </p>
+  </section>
+
+  <section id="skills" class="skills">
+    <p class="tag">TECHNICAL SKILLS</p>
+
+    <div class="skill-grid">
+      <article>
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript, Responsive Design, Git, GitHub</p>
+      </article>
+
+      <article>
+        <h3>Programming</h3>
+        <p>Python, R, Basic SQL, APIs, Problem Solving</p>
+      </article>
+
+      <article>
+        <h3>Data & Visualization</h3>
+        <p>ggplot2, dplyr, Shiny, Data Analysis, Interactive Dashboards</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <p class="tag dark-tag">FEATURED PROJECTS</p>
+
+    <h2>Projects that show what I can build.</h2>
+
+    <div class="project-grid">
+      <article class="project-card">
+        <span>PROJECT 01</span>
+        <h3>Data Visualization Dashboard</h3>
+        <p>
+          An interactive dashboard that transforms data into clear charts,
+          maps, and useful insights.
+        </p>
+        <a href="https://github.com/SHAWNSJ-DATASCIENTIST"
+           target="_blank">View Code →</a>
+      </article>
+
+      <article class="project-card">
+        <span>PROJECT 02</span>
+        <h3>Web Application</h3>
+        <p>
+          A responsive web application built with HTML, CSS, and JavaScript
+          for a clean user experience.
+        </p>
+        <a href="https://github.com/SHAWNSJ-DATASCIENTIST"
+           target="_blank">View Code →</a>
+      </article>
+
+      <article class="project-card">
+        <span>PROJECT 03</span>
+        <h3>Python API Project</h3>
+        <p>
+          A Python project that fetches, processes, and presents data from
+          an external API.
+        </p>
+        <a href="https://github.com/SHAWNSJ-DATASCIENTIST"
+           target="_blank">View Code →</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <p class="tag">LET'S CONNECT</p>
+
+    <h2>Open to internships and placement opportunities.</h2>
+
+    <a class="primary-button" href="mailto:shawnsj9003@gmail.com">
+      Email Me
+    </a>
+
+    <div class="social-links">
+      <a href="https://github.com/SHAWNSJ-DATASCIENTIST" target="_blank">
+        GitHub
+      </a>
+
+      <a href=" https://www.linkedin.com/in/shawnsj7/?isSelfProfile=true "
+         target="_blank">
+        LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Shawn Samjapasingh Joylin.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
